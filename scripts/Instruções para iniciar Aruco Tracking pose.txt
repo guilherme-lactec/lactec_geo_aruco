@@ -1,0 +1,16 @@
+Passos para iniciar o aruco tracking
+
+1 - roscore (inicia o ros)
+
+2 - roslaunch realsense2_camera rs_camera.launch (inicia a camera realsense)
+
+3 - roslaunch aruco_ros single.launch markerId:=1 markerSize:=0.09 eye:="right" (começa o tracking do aruco usando a camera realsense)
+
+4 - rostopic echo /aruco_single/pose (visualizar os dados de posição pelo terminal)
+
+
+
+
+
+
+
